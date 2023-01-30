@@ -38,7 +38,7 @@ custom styles configured withing the layer directive to aid/provide re-usability
   .background-setting {
     /* background-color: rgba(0, 0, 0, 0.5); */
     background-blend-mode: overlay;
-    background-size: cover;
+    /* background-size: cover; */
     /* background-repeat: no-repeat; */
     background-position: center;
     background-image: url(http://hopiumdefi.com/wp-content/uploads/2022/03/mainBg-21.png?id=1046) !important;
