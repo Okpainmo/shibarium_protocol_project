@@ -110,7 +110,6 @@ footer li {
 
 footer li:hover {
   border-bottom: 1px solid white;
-  transition: ease border-bottom 0.75s;
 }
 
 footer {
@@ -118,7 +117,7 @@ footer {
 }
 
 nav li:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   /* transition: ease border-bottom 0.75s; */
 }
 
