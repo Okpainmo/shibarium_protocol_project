@@ -872,10 +872,6 @@ video {
   width: 50%;
 }
 
-.w-\[250px\] {
-  width: 250px;
-}
-
 .w-\[280px\] {
   width: 280px;
 }
@@ -2487,7 +2483,7 @@ video {
 }
 
 .background-setting {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
   /* background-repeat: no-repeat; */
@@ -2505,6 +2501,10 @@ video {
 general project resets
 =========================
 */
+
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -2604,12 +2604,12 @@ nav li:hover {
 
 .open-mobile-menu {
   transform: translateX(0);
-  transition: transform 0.7s ease;
+  transition: transform 0.45s ease;
 }
 
 .close-mobile-menu {
   transform: translateX(-100%);
-  transition: transform 0.7s ease;
+  transition: transform 0.45s ease;
 }
 
 .hover\:font-bold:hover {
@@ -2738,16 +2738,12 @@ nav li:hover {
     width: 90%;
   }
 
-  .md\:w-\[60\%\] {
-    width: 60%;
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[50\%\] {
-    width: 50%;
   }
 
   .md\:px-12 {

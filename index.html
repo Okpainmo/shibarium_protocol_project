@@ -46,17 +46,17 @@
           </svg>
         </button>
         <ul class="text-black flex flex-col gap-6 pt-4 font-bold">
-          <li class="pb-2">
+          <li class="pb-2 mobile-menu-link">
             <a href="#">Home</a>
           </li>
-          <li class="pb-2">
-            <a href="#">White paper</a>
+          <li class="pb-2 mobile-menu-link">
+            <a href="#white-paper-section">White paper</a>
           </li>
-          <li class="pb-2">
-            <a href="#"> About </a>
+          <li class="pb-2 mobile-menu-link">
+            <a href="#about-section"> About </a>
           </li>
-          <li class="pb-2">
-            <a href="#"> Contact Us </a>
+          <li class="pb-2 mobile-menu-link">
+            <a href="#contact-section"> Contact Us </a>
           </li>
         </ul>
       </div>
@@ -160,6 +160,7 @@
     </header>
     <section
       class="about-section py-[100px] sm:py-[200px] text-center px-3 bg-white"
+      id="about-section"
     >
       <div class="sm:text-center sm:px-12 md:w-[90%] md:mx-auto lg:w-[70%]">
         <h5 class="font-bold text-[20px] uppercase">
@@ -191,8 +192,8 @@
             <div class="font-bold text-[100px]">1</div>
             <div class="font-bold text-[25px]">
               Billion Shibarium Protocol <br />
-              (100,000,000,000) <br />
-              Tax 5/5 <br />
+              1,000,000,000,000 <br />
+              (Tax 5/5) <br />
               <span class="font-bold text-[20px]">will be issued</span>
             </div>
           </div>
@@ -270,7 +271,10 @@
         </ul>
       </div>
     </section>
-    <section class="white-paper-section bg-white py-[150px] px-3">
+    <section
+      class="white-paper-section bg-white py-[150px] px-3"
+      id="white-paper-section"
+    >
       <h5 class="font-bold text-[20px] uppercase">Our Files</h5>
       <h4 class="mt-2 font-bold text-[35px] uppercase">Documents</h4>
       <a
@@ -288,6 +292,7 @@
     </section>
     <section
       class="contact-us-section bg-transparent py-[70px] sm:py-[150px] px-3 text-white sm:px-12 md:w-[50%] md:mx-auto"
+      id="contact-section"
     >
       <h5 class="font-bold text-[20px] uppercase">Contact Us</h5>
       <h4 class="mt-4 font-bold text-[35px] capitalize">Get in touch</h4>
