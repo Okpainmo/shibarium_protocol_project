@@ -643,6 +643,10 @@ video {
   right: 1rem;
 }
 
+.bottom-8 {
+  bottom: 2rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -688,12 +692,20 @@ video {
   margin-right: auto;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mt-2 {
@@ -708,16 +720,16 @@ video {
   margin-top: 1.5rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .mt-12 {
   margin-top: 3rem;
 }
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .box-border {
@@ -820,20 +832,28 @@ video {
   height: 1.5rem;
 }
 
-.h-\[50px\] {
-  height: 50px;
+.h-\[55px\] {
+  height: 55px;
 }
 
-.h-4 {
-  height: 1rem;
+.h-\[45px\] {
+  height: 45px;
 }
 
 .h-\[400px\] {
   height: 400px;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[700px\] {
+  min-height: 700px;
 }
 
 .w-\[20px\] {
@@ -852,12 +872,12 @@ video {
   width: 1.5rem;
 }
 
-.w-\[40px\] {
-  width: 40px;
+.w-\[55px\] {
+  width: 55px;
 }
 
-.w-4 {
-  width: 1rem;
+.w-\[45px\] {
+  width: 45px;
 }
 
 .w-\[50px\] {
@@ -1918,6 +1938,10 @@ video {
   padding: 7px;
 }
 
+.p-\[5px\] {
+  padding: 5px;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1928,14 +1952,14 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .py-\[100px\] {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .py-\[70px\] {
@@ -1968,10 +1992,6 @@ video {
 
 .pr-3 {
   padding-right: 0.75rem;
-}
-
-.pt-\[100px\] {
-  padding-top: 100px;
 }
 
 .pl-\[9\.5px\] {
@@ -2483,7 +2503,7 @@ video {
 }
 
 .background-setting {
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   background-blend-mode: overlay;
   background-size: cover;
   /* background-repeat: no-repeat; */
@@ -2571,7 +2591,7 @@ regular styles
 }
 
 .white-paper-area:hover {
-  background-color: black;
+  /* background-color: rgba(0, 255, 0, 1); */
   transform: scale(1.01);
   transition: ease transform 0.75s;
   box-shadow: 0 0 20px 1px grey;
@@ -2595,6 +2615,10 @@ footer li {
 footer li:hover {
   border-bottom: 1px solid white;
   transition: ease border-bottom 0.75s;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav li:hover {
