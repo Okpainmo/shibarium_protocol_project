@@ -26,10 +26,44 @@
     <!-- title -->
     <title>Shibarium Protocol</title>
   </head>
-  <body class="background-setting">
+  <body class="background-setting relative overflow-x-hidden">
+    <div
+      class="mobile-menu fixed top-0 left-0 right-0 z-50 bg-white min-h-screen translate-x-[-100%] flex lg:hidden"
+    >
+      <div class="mobile-menu-links px-4">
+        <button
+          class="mobile-menu-close-btn fixed top-4 right-4 p-2 border-2 rounded-[100%]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-x-lg w-[20px]"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </button>
+        <ul class="text-black flex flex-col gap-6 pt-4 font-bold">
+          <li class="pb-2">
+            <a href="#">Home</a>
+          </li>
+          <li class="pb-2">
+            <a href="#">White paper</a>
+          </li>
+          <li class="pb-2">
+            <a href="#"> About </a>
+          </li>
+          <li class="pb-2">
+            <a href="#"> Contact Us </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <header class="header min-h-screen background-setting">
       <nav
-        class="w-full py-2 pr-3 sm:px-12 sm:py-6 md:px-20 flex justify-between items-center"
+        class="w-full py-2 pr-3 sm:px-12 sm:py-6 md:px-12 flex justify-between items-center"
         style="
           box-shadow: 0 0 15px 2px rgb(0 0 0 / 5%);
           background-color: transparent;
@@ -50,9 +84,25 @@
           </div>
         </a>
         <aside class="flex gap-4 lg:gap-0 items-center">
+          <div class="desktop-nav-links text-white hidden lg:inline-block">
+            <ul class="list-none flex gap-8">
+              <li class="pb-2">
+                <a href="#">Home</a>
+              </li>
+              <li class="pb-2">
+                <a href="#">White paper</a>
+              </li>
+              <li class="pb-2">
+                <a href="#"> About </a>
+              </li>
+              <li class="pb-2">
+                <a href="#"> Contact Us </a>
+              </li>
+            </ul>
+          </div>
           <button
             type="button"
-            class="menu-button w-[35px] h-[35px] p-[7px] lg:w-[40px] lg:h-[40px] lg:hidden text-white"
+            class="mobile-menu-open-btn w-[35px] h-[35px] p-[7px] lg:w-[40px] lg:h-[40px] lg:hidden text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -72,16 +122,25 @@
         </aside>
       </nav>
       <section
-        class="pt-[100px] sm:pt-[150px] text-white px-3 sm:text-center sm:px-12 md:w-[90%] md:mx-auto lg:w-[70%]"
+        class="pt-[100px] sm:pt-[150px] text-white px-3 sm:px-12 md:w-[85%] md:mx-auto lg:w-full lg:flex"
       >
-        <h1 class="font-bold text-[40px] leading-[60px]">
-          Shibarium Protocol Defi ECO System
-        </h1>
-        <h1 class="text-[35px] mt-3">for the cryptocurrency business</h1>
-        <div class="mt-3">
-          Shibarium Protocol is committed to becoming the leader on the
-          next-generation Shibarium Blockchain and playing an essential role in
-          the road from Web 2.0 to Web 3.0 of the internet.
+        <div class="sm:text-center lg:text-left lg:w-[65%] lg:pt-[30px]">
+          <h1 class="font-bold text-[40px] leading-[60px]">
+            Shibarium Protocol Defi ECO System
+          </h1>
+          <h1 class="text-[35px] mt-3">for the cryptocurrency business</h1>
+          <div class="mt-3">
+            Shibarium Protocol is committed to becoming the leader on the
+            next-generation Shibarium Blockchain and playing an essential role
+            in the road from Web 2.0 to Web 3.0 of the internet.
+          </div>
+        </div>
+        <div class="lg:w-[35%] hidden lg:inline-block">
+          <img
+            src="./assets/images/logo_removed-bg.png"
+            alt="shibarium protocol logo"
+            class="w-full"
+          />
         </div>
       </section>
       <div
@@ -132,24 +191,26 @@
             <div class="font-bold text-[100px]">1</div>
             <div class="font-bold text-[25px]">
               Billion Shibarium Protocol <br />
-              (100,000,000,000)
+              (100,000,000,000) <br />
+              Tax 5/5 <br />
+              <span class="font-bold text-[20px]">will be issued</span>
             </div>
           </div>
-          <p class="font-bold">will be issued</p>
+          <!-- <p class="font-bold"></p> -->
         </div>
       </div>
     </section>
     <section class="roadmap-section bg-white py-[100px] px-3">
-      <div
-        class="sm:px-12 md:w-[90%] md:mx-auto lg:w-[70%] sm:pl-[150px] mt-12"
-      >
+      <div class="sm:px-12 md:w-[90%] md:mx-auto lg:w-[70%]">
         <h5 class="font-bold text-[20px] text-center">Shibarium Protocol</h5>
         <h4 class="mt-2 mb-6 font-bold text-[45px] uppercase text-center">
           Roadmap
         </h4>
-        <ul class="roadmap-section list-disc list-inside relative pl-[9.5px]">
+        <ul
+          class="roadmap-section list-disc list-inside relative pl-[9.5px] sm:ml-[150px] lg:ml-[200px]"
+        >
           <div
-            class="pb-6 border-l-[2px] border-l-slate-700 border-dotted pl-[35px]"
+            class="pb-6 border-l-[2px] border-l-slate-700 border-dotted pl-[35px] mt-12"
           >
             <div class="stage-1 font-bold">Stage 1</div>
             <li>
@@ -179,9 +240,11 @@
 
           <div class="pb-6 border-l border-l-slate-700 pl-[35px]">
             <div class="stage-3 font-bold">Stage 3 missing</div>
-            <li>------------------------------------</li>
-            <li>------------------------------------------</li>
-            <li>-----------------------------------------------------</li>
+            <li>NFT Marketplace.</li>
+            <li>Shibarium Protocol DeFi Social CRM Platform.</li>
+            <li>Shibarium Protocol DeFi Social CRM Platform.</li>
+            <li>Shibarium Protocol DeFi NFTs for social influencers.</li>
+            <li>Shibarium Protocol DeFi App.</li>
           </div>
 
           <div class="pb-6 border-l border-l-slate-700 pl-[35px]">
@@ -207,10 +270,11 @@
         </ul>
       </div>
     </section>
-    <section class="white-paper-section bg-white py-[70px] px-3">
+    <section class="white-paper-section bg-white py-[150px] px-3">
       <h5 class="font-bold text-[20px] uppercase">Our Files</h5>
       <h4 class="mt-2 font-bold text-[35px] uppercase">Documents</h4>
-      <div
+      <a
+        href="#"
         class="white-paper-area background-setting rounded h-[400px] mt-6 flex items-center justify-center flex-col text-white"
       >
         <img
@@ -220,10 +284,10 @@
         />
         <div class="mt-6 text-[22px]">White Paper</div>
         <h4 class="mt-2 font-bold text-[25px]">(coming soon)</h4>
-      </div>
+      </a>
     </section>
     <section
-      class="contact-us-section bg-transparent py-[70px] px-3 text-white sm:px-12 md:w-[90%] md:mx-auto lg:w-[70%] sm:pl-[150px]"
+      class="contact-us-section bg-transparent py-[70px] sm:py-[150px] px-3 text-white sm:px-12 md:w-[50%] md:mx-auto"
     >
       <h5 class="font-bold text-[20px] uppercase">Contact Us</h5>
       <h4 class="mt-4 font-bold text-[35px] capitalize">Get in touch</h4>
@@ -295,64 +359,69 @@
       </form>
     </section>
     <footer
-      class="bg-transparent py-[100px] px-3 text-white overflow-hidden sm:px-12 md:w-[90%] md:mx-auto lg:w-[70%] sm:pl-[150px]"
+      class="bg-transparent py-[100px] px-3 text-white overflow-hidden sm:px-12 md:w-full md:mx-auto border-t"
     >
-      <div class="brand-logo-area">
-        <img
-          src="./assets/images/logo_removed-bg.png"
-          alt="shibarium protocol logo"
-          class="w-[120px] translate-x-[-20px]"
-        />
-        <p class="font-bold">
-          &copy; 2023 <br />
-          <span class="text-[22px]"> Shibarium Protocol </span>
-        </p>
-      </div>
-      <div class="footer-links flex flex-col mt-16 gap-8 text-left w-full">
-        <div class="flex w-full">
-          <div class="w-[50%]">
-            <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li><a href="#">Statistics</a></li>
-              <li><a href="#">Roadmap</a></li>
-            </ul>
+      <div class="md:flex md:w-full">
+        <div class="brand-logo-area md:w-[50%]">
+          <img
+            src="./assets/images/logo_removed-bg.png"
+            alt="shibarium protocol logo"
+            class="w-[120px] translate-x-[-40px]"
+          />
+          <p class="font-bold">
+            &copy; 2023 <br />
+            <span class="text-[22px]"> Shibarium Protocol </span>
+          </p>
+        </div>
+        <div
+          class="footer-links flex flex-col mt-16 gap-8 text-left w-full md:w-[50%] md:mt-0"
+        >
+          <div class="flex w-full">
+            <div class="w-[50%]">
+              <ul>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <!-- <li><a href="#">Statistics</a></li> -->
+                <li><a href="#">Roadmap</a></li>
+              </ul>
+            </div>
+            <div class="w-[50%]">
+              <ul>
+                <li><a href="#">White Paper</a></li>
+                <!-- <li><a href="#">Logo</a></li> -->
+                <!-- <li><a href="#">Mascot</a></li> -->
+              </ul>
+            </div>
           </div>
-          <div class="w-[50%]">
-            <ul>
-              <li><a href="#">White Paper</a></li>
-              <li><a href="#">Logo</a></li>
-              <li><a href="#">Mascot</a></li>
-            </ul>
+          <div>
+            <div class="w-[50%]">
+              <ul>
+                <li><a href="#">Twitter</a></li>
+                <!-- <li><a href="#">Discord</a></li> -->
+                <li><a href="#">Telegram</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div>
-          <div class="w-[50%]">
-            <ul>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Discord</a></li>
-              <li><a href="#">Telegram</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
-      <div class="email-subscription-area mt-12">
+      <div class="email-subscription-area mt-28">
         <label for="email"></label>
         <input
           id="subject"
           type="text"
           name="email"
           placeholder="email"
-          class="w-full md:w-400px"
+          class="w-[280px] sm-w-[400px]"
         />
         <button
           type="submit"
-          class="bg-white text-black rounded px-8 py-3 font-bold mt-4"
+          class="form-submission-btn bg-white text-black rounded px-8 py-3 font-bold mt-4"
         >
           Send Message
         </button>
       </div>
     </footer>
   </body>
+  <script src="./scripts/index.js"></script>
 </html>
