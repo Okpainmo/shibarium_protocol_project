@@ -832,6 +832,14 @@ video {
   display: none;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
 .h-\[35px\] {
   height: 35px;
 }
@@ -937,33 +945,13 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-\[-120px\] {
-  --tw-translate-y: -120px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[-40px\] {
-  --tw-translate-x: -40px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[-40px\] {
-  --tw-translate-y: -40px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .translate-y-\[-30px\] {
   --tw-translate-y: -30px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-\[-100px\] {
-  --tw-translate-x: -100px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[-100px\] {
-  --tw-translate-y: -100px;
+.translate-x-\[-15px\] {
+  --tw-translate-x: -15px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1981,11 +1969,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-\[100px\] {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1996,9 +1979,9 @@ video {
   padding-bottom: 70px;
 }
 
-.py-\[150px\] {
-  padding-top: 150px;
-  padding-bottom: 150px;
+.py-\[100px\] {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .px-8 {
@@ -2019,12 +2002,20 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-\[50px\] {
+  padding-bottom: 50px;
+}
+
 .pr-3 {
   padding-right: 0.75rem;
 }
 
-.pt-\[300px\] {
-  padding-top: 300px;
+.pt-\[100px\] {
+  padding-top: 100px;
+}
+
+.pt-\[200px\] {
+  padding-top: 200px;
 }
 
 .pb-\[200px\] {
@@ -2543,7 +2534,7 @@ video {
   /* background-color: rgba(0, 0, 0, 0.5); */
   background-blend-mode: overlay;
   /* background-size: cover; */
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-position: center;
   background-image: url(http://hopiumdefi.com/wp-content/uploads/2022/03/mainBg-21.png?id=1046) !important;
   background-attachment: fixed;
@@ -2739,10 +2730,6 @@ nav li:hover {
     margin-left: 150px;
   }
 
-  .sm\:justify-start {
-    justify-content: flex-start;
-  }
-
   .sm\:justify-center {
     justify-content: center;
   }
@@ -2802,16 +2789,16 @@ nav li:hover {
     width: 90%;
   }
 
-  .md\:w-\[50\%\] {
-    width: 50%;
+  .md\:w-\[65\%\] {
+    width: 65%;
   }
 
   .md\:w-full {
     width: 100%;
   }
 
-  .md\:w-\[65\%\] {
-    width: 65%;
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 
   .md\:px-12 {
@@ -2825,10 +2812,6 @@ nav li:hover {
 }
 
 @media (min-width: 1024px) {
-  .lg\:ml-\[200px\] {
-    margin-left: 200px;
-  }
-
   .lg\:ml-\[50px\] {
     margin-left: 50px;
   }
@@ -2857,32 +2840,21 @@ nav li:hover {
     width: 100%;
   }
 
-  .lg\:w-\[65\%\] {
-    width: 65%;
+  .lg\:w-\[60\%\] {
+    width: 60%;
   }
 
-  .lg\:w-\[35\%\] {
-    width: 35%;
+  .lg\:w-\[40\%\] {
+    width: 40%;
   }
 
   .lg\:w-\[70\%\] {
     width: 70%;
   }
 
-  .lg\:w-\[55\%\] {
-    width: 55%;
-  }
-
-  .lg\:w-\[45\%\] {
-    width: 45%;
-  }
-
-  .lg\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .lg\:justify-center {
-    justify-content: center;
+  .lg\:translate-y-\[-150px\] {
+    --tw-translate-y: -150px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:gap-0 {
